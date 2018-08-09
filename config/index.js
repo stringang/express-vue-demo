@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
 
-const path = require('path')
+const path = require('path');
 
 module.exports = {
     dev: {
@@ -45,12 +45,12 @@ module.exports = {
 
     build: {
         // Template for index.html
-        index: path.resolve(__dirname, '../dist/index.html'),
+        index: path.resolve(__dirname, '../public/index.html'), // 在此路径生成 index.html
 
         // Paths
-        assetsRoot: path.resolve(__dirname, '../dist'),
-        assetsSubDirectory: 'static',
-        assetsPublicPath: '/',
+        assetsRoot: path.resolve(__dirname, '../public/'), // 静态资源的根路径
+        assetsSubDirectory: 'static', // webpack 生成的资源文件在此路径下
+        assetsPublicPath: '/', // http 访问的根路径
 
         /**
          * Source Maps
@@ -73,4 +73,4 @@ module.exports = {
         // Set to `true` or `false` to always turn it on or off
         bundleAnalyzerReport: process.env.npm_config_report
     }
-}
+};

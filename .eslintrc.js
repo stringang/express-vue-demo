@@ -39,6 +39,7 @@ module.exports = {
             },
             'svg': 'always',
             'math': 'always'
-        }]
+        }],
+        "semi": [2, "always"]
     }
 }
