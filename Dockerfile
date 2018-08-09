@@ -1,4 +1,4 @@
-FROM node/6.13.1
+FROM node:6.13.1
 
 # ENV LOG       debug
 # ENV PORT      9098
